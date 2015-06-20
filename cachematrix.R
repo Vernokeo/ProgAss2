@@ -67,12 +67,12 @@ cacheSolve <- function(x, ...) {
   
   
   ## calculate inverse matrix
-  InverseMatrix <- solve(data) %*% data
+  NewInverseMatrix <- solve(data) %*% data
   
   ## storing the inverse 
-  x$setInverseMatrix(InverseMatrix)
+  x$setInverseMatrix(NewInverseMatrix)
   
   
   ## return inverse matrix
-  InverseMatrix
+  NewInverseMatrix
 }
